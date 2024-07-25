@@ -40,32 +40,6 @@ app.use((req, res, next) => {
     next();
 });
 
-// // Connect to Redis
-
-// const redisclient = redis.createClient({
-//     host: '127.0.0.1', // Change to your Redis server host if necessary
-//     port: 6379 // Change to your Redis server port if necessary
-//   }); 
-  
-// (async () => { 
-//     await redisclient.connect(); 
-// })(); 
-  
-// console.log("Connecting to the Redis"); 
-  
-// redisclient.on("ready", () => { 
-//     console.log("Connected!"); 
-// }); 
-  
-// redisclient.on("error", (err) => { 
-//     console.log("Error in the Connection"); 
-// });
-
-// // Make Redis client available to routes
-// app.use((req, res, next) => {
-//     req.redisClient = redisClient;
-//     next();
-// });
 
 // Routes
 app.use('/api/medicines', routes);
