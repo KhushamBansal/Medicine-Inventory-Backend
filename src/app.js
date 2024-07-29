@@ -14,7 +14,7 @@ mongoose.connect('mongodb://localhost:27017/medicine-db');
 
 // Connect to Redis
 const redisClient = redis.createClient({
-    url: 'redis://127.0.0.1:6379' // Simplified connection string format
+    url: 'redis://127.0.0.1:6379'
 });
 
 (async () => {
