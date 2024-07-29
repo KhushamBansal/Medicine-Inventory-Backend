@@ -6,7 +6,7 @@ const routes = require('./routes');
 const app = express();
 
 // Middleware
-app.use(express.json()); // Use express.json() instead of bodyParser.json()
+app.use(express.json());
 
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/medicine-db');
